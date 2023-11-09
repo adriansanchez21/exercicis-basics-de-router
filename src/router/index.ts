@@ -3,6 +3,7 @@ import Home from '../components/Home.vue'
 import About from '../components/About.vue'
 import Contact from '../components/Contact.vue'
 import ProductDetail from '../components/ProductDetail.vue'
+import LlistaDeProduces from '../components/ProductList.vue'
 
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/producte/:id',
       name: 'productdetail',
       component: ProductDetail
+    },
+    {
+      path: '/llistaDeProduces',
+      name: 'llistaDeProductes',
+      component: LlistaDeProduces
     }
   ]
 })
